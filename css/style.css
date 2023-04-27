@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg-color: #2784f0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+header{
+    background-color: var(--main-bg-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto 50px;
+}
+
+.logo img{
+    width: 150px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    height: 35px;
+    width: 550px;
+    padding: 0 20px;
+    margin: 0 5px;
+    border-radius: 2px;
+}
+
+.btn{
+    height: 30px;
+    width: 75px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: var(--main-bg-color);
+    border: solid 2px white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 15px
+}
+
+nav ul li a{
+    text-decoration: none;    
+    color: white;
+}
+
+nav ul li a:hover{
+    font-weight: bolder;
+}
+
+.container{
+    min-height: calc(100vh - 70px - 70px);
+    background-color: #f0f0f0;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.slider img{
+    cursor: pointer;
+}
+
+.deals-of-the-day{
+    height: 250px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+}
+
+.ed-items{
+    height: 240px;
+    width: 240px;
+    /* border: solid 2px goldenrod; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1{
+    width: 200px;
+}
+
+#img2{
+    width: 150px;
+}
+
+#img3{
+    width: 160px;
+}
+
+#img4{
+    width: 105px;
+}
+
+#img5{
+    width: 130px;
+}
+
+#img6{
+    width: 90px;
+}
+
+#img7{
+    width: 170px;
+}
+
+footer{
+    height: 70px;
+    background-color: #212121;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}   
+
+/*demo work for js  */
+.login{
+    width: 200px;
+    height: 50PX;
+    z-index: 20;
+    position: absolute;
+    border-radius: 12px;
+    background-color: #8db2dd;
+    top: 80px;
+    right: 80px;
+    transition: width 2s linear 1s
+}
+
+.hidden{
+    display: none;
+}
+
+.list{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
